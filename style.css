@@ -1,0 +1,50 @@
+body  {
+    margin: 0;
+    background-color: rgb(171, 219, 112) ;
+}
+
+div{
+    width: 200px;
+    height: 200px;
+    margin: 20px;
+    background-color: aliceblue;
+    /* animation: expand 1.5s linear 1s infinite ; */
+    /* animation: name duration timing-function delay iteration-count direction fill-mode; */
+    /* transition: background-color 1s ease-in-out ; */
+}
+
+div:hover{
+    /* animation-play-state: paused; */
+    /* transform: rotate(45deg); */
+    /* transform: scale(1.3) rotate(45deg); */
+    /* transform: translate(50px,50px); */
+    transform: skew(45deg);
+    transform-origin: top left;
+    background-color: orange;
+}
+ /* @keyframes expand {
+    from {
+        width: 200px;
+        height: 300px;
+        background-color:white;
+    }
+    to {
+        width: 600px;
+        height: 200px;
+        background-color:orange;
+    }
+ } */
+
+ @keyframes expand {
+    0%{
+        width: 200px;
+    }
+    50%{
+        width: 600px;
+    }
+    100%{
+        width: 200px;
+    }
+
+    
+ }
